@@ -1630,14 +1630,6 @@
 
   "footer.link.feedback": "Send Feedback",
 
-  "footer.link.ancbs": "Archives at NCBS",
-
-  "footer.link.ancbs.access": "How to Access",
-
-  "footer.link.ancbs.catalogue": "Catalogue",
-
-  "footer.link.ancbs.collections": "Collections",
-
   "forgot-email.form.header": "Forgot Password",
 
   "forgot-email.form.info": "Enter the email address associated with the account.",
@@ -2344,8 +2336,6 @@
 
   "item.listelement.badge": "Item",
 
-  "item.page.access-policy-label" : "Access Policy",
-
   "item.page.description": "Description",
 
   "item.page.journal-issn": "Journal ISSN",
@@ -2357,8 +2347,6 @@
   "item.page.titleprefix": "Item: ",
 
   "item.page.volume-title": "Volume Title",
-
-  "item.page.identifier": "Identifier",
 
   "item.search.results.head": "Item Search Results",
 
@@ -2776,7 +2764,7 @@
 
   "login.form.forgot-password": "Have you forgotten your password?",
 
-  "login.form.header": "Please log in to Collections | Archives at NCBS",
+  "login.form.header": "Please log in to DSpace",
 
   "login.form.new-user": "New user? Click here to register.",
 
@@ -3046,7 +3034,7 @@
 
   "mydspace.view-btn": "View",
 
-  "nav.browse.header": "All of Collections | Archives at NCBS",
+  "nav.browse.header": "All of DSpace",
 
   "nav.community-browse.header": "By Community",
 
@@ -3504,9 +3492,9 @@
 
   "repository.image.logo": "Repository logo",
 
-  "repository.title": "Collections | Archives at NCBS",
+  "repository.title": "DSpace Repository",
 
-  "repository.title.prefix": "Collections | Archives at NCBS :: ",
+  "repository.title.prefix": "DSpace Repository :: ",
 
   "resource-policies.add.button": "Add",
 
@@ -4738,7 +4726,7 @@
 
   "thumbnail.person.placeholder": "No Profile Picture Available",
 
-  "title": "Collections | Archives at NCBS",
+  title: "DSpace",
 
   "vocabulary-treeview.header": "Hierarchical tree view",
 
@@ -5227,5 +5215,4 @@
   "access-control-option-end-date": "Grant access until",
 
   "access-control-option-end-date-note": "Select the date until which the related access condition is applied",
-
 }
