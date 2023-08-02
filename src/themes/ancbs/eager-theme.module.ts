@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { SharedModule } from '../../app/shared/shared.module';
 import { HomeNewsComponent } from './app/home-page/home-news/home-news.component';
 import { NavbarComponent } from './app/navbar/navbar.component';
+import { ExpandableNavbarSectionComponent } from './app/navbar/expandable-navbar-section/expandable-navbar-section.component';
 import { HeaderComponent } from './app/header/header.component';
 import { HeaderNavbarWrapperComponent } from './app/header-nav-wrapper/header-navbar-wrapper.component';
 import { RootModule } from '../../app/root.module';
@@ -11,6 +12,10 @@ import { SharedBrowseByModule } from '../../app/shared/browse-by/shared-browse-b
 import { ResultsBackButtonModule } from '../../app/shared/results-back-button/results-back-button.module';
 import { FooterComponent } from './app/footer/footer.component';
 import { BreadcrumbsComponent } from './app/breadcrumbs/breadcrumbs.component';
+import { TopLevelCommunityListComponent } from './app/home-page/top-level-community-list/top-level-community-list.component';
+// import { ComcolPageBrowseByComponent } from './app/shared/comcol-page-browse-by/comcol-page-browse-by.component';
+// import { CommunityPageComponent } from './app/community-page/community-page.component';
+import { CommunityPageSubCollectionListComponent } from './app/community-page/sub-collection-list/community-page-sub-collection-list.component';
 
 
 /**
@@ -25,8 +30,13 @@ const DECLARATIONS = [
   HeaderComponent,
   HeaderNavbarWrapperComponent,
   NavbarComponent,
+  ExpandableNavbarSectionComponent,
   FooterComponent,
   BreadcrumbsComponent,
+  TopLevelCommunityListComponent,
+  // CommunityPageComponent,
+  CommunityPageSubCollectionListComponent,
+  // ComcolPageBrowseByComponent,
 ];
 
 @NgModule({

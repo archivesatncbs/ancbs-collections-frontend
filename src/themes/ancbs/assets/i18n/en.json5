@@ -1848,6 +1848,8 @@
 
   "home.top-level-communities.help": "Select a community to browse its collections.",
 
+  "home.top-level-repositories.head": "Repositories in Archives at NCBS",
+
   "info.end-user-agreement.accept": "I have read and I agree to the End User Agreement",
 
   "info.end-user-agreement.accept.error": "An error occurred accepting the End User Agreement",
@@ -3502,7 +3504,13 @@
 
   "relationships.isFundingAgencyOf.OrgUnit": "Funder",
 
+  "repository.all-lists.head": "Subrepositories and Collections",
+
   "repository.image.logo": "Repository logo",
+
+  "repository.page.handle": "Permanent URI for this repository",
+
+  "repository.sub-collection-list.head": "Collections in this Repository",
 
   "repository.title": "Collections | Archives at NCBS Repository",
 

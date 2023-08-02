@@ -1,11 +1,20 @@
 // Override or add CSS variables for your theme here
 
 :root {
-  --ds-header-logo-height: 40px;
-  --ds-banner-text-background: rgba(0, 0, 0, 0.45);
-  --ds-banner-background-gradient-width: 300px;
-  --ds-home-news-link-color: #{$green};
-  --ds-home-news-link-hover-color: #{darken($green, 15%)};
-  --ds-header-navbar-border-bottom-color: #{$green};
+  // --ds-header-logo-height: 40px;
+  // --ds-banner-text-background: rgba(0, 0, 0, 0.45);
+  // --ds-banner-background-gradient-width: 300px;
+  // --ds-home-news-link-color: #{$green};
+  // --ds-home-news-link-hover-color: #{darken($green, 15%)};
+  --ds-header-navbar-border-bottom-color: #{theme-color('primary')};
+  --ds-header-navbar-border-top-color: #{theme-color('primary')};
+  --ds-navbar-link-color: #{theme-color('primary')};
+  --ds-navbar-link-color-hover: #{theme-color('secondary')};
+
+  --ds-breadcrumb-bg: #{theme-color('light')} !important;
+  --ds-breadcrumb-link-color: #{theme-color('primary')};
+  --ds-breadcrumb-link-active-color: #{theme-color('secondary')};
+  --ds-breadcrumb-max-length: 100%;
+
 }
 

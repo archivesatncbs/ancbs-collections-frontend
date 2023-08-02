@@ -5227,4 +5227,12 @@
   "item.page.access-policy-label": "Access Policy",
 
   "item.page.identifier": "Identifier",
+
+  "home.top-level-repositories.head": "Repositories in Archives at NCBS",
+
+  "repository.page.handle": "Permanent URI for this repository",
+
+  "repository.sub-collection-list.head": "Collections in this Repository",
+
+  "repository.all-lists.head": "Subrepositories and Collections",
 }
