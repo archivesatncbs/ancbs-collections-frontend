@@ -16,6 +16,10 @@ import { TopLevelCommunityListComponent } from './app/home-page/top-level-commun
 // import { ComcolPageBrowseByComponent } from './app/shared/comcol-page-browse-by/comcol-page-browse-by.component';
 // import { CommunityPageComponent } from './app/community-page/community-page.component';
 import { CommunityPageSubCollectionListComponent } from './app/community-page/sub-collection-list/community-page-sub-collection-list.component';
+// import { CommunityListPageComponent } from './app/community-list-page/community-list-page.component';
+// import { CommunityListComponent } from './app/community-list-page/community-list/community-list.component';
+// import { CommunityPageSubCommunityListComponent } from './app/community-page/sub-community-list/community-page-sub-community-list.component';
+
 
 
 /**
@@ -37,6 +41,9 @@ const DECLARATIONS = [
   // CommunityPageComponent,
   CommunityPageSubCollectionListComponent,
   // ComcolPageBrowseByComponent,
+  // CommunityListPageComponent,
+  // CommunityListComponent,
+  // CommunityPageSubCommunityListComponent,
 ];
 
 @NgModule({
