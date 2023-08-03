@@ -19,7 +19,7 @@ import { CommunityPageSubCollectionListComponent } from './app/community-page/su
 // import { CommunityListPageComponent } from './app/community-list-page/community-list-page.component';
 // import { CommunityListComponent } from './app/community-list-page/community-list/community-list.component';
 // import { CommunityPageSubCommunityListComponent } from './app/community-page/sub-community-list/community-page-sub-community-list.component';
-
+import { LoginPageComponent } from './app/login-page/login-page.component';
 
 
 /**
@@ -44,6 +44,7 @@ const DECLARATIONS = [
   // CommunityListPageComponent,
   // CommunityListComponent,
   // CommunityPageSubCommunityListComponent,
+  LoginPageComponent,
 ];
 
 @NgModule({
