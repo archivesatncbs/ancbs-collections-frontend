@@ -12,7 +12,7 @@ import { NavbarModule } from '../../app/navbar/navbar.module';
 import { SharedBrowseByModule } from '../../app/shared/browse-by/shared-browse-by.module';
 import { ResultsBackButtonModule } from '../../app/shared/results-back-button/results-back-button.module';
 import { FooterComponent } from './app/footer/footer.component';
-// import { BreadcrumbsComponent } from './app/breadcrumbs/breadcrumbs.component';
+import { BreadcrumbsComponent } from './app/breadcrumbs/breadcrumbs.component';
 import { TopLevelCommunityListComponent } from './app/home-page/top-level-community-list/top-level-community-list.component';
 // import { ComcolPageBrowseByComponent } from './app/shared/comcol-page-browse-by/comcol-page-browse-by.component';
 // import { CommunityPageComponent } from './app/community-page/community-page.component';
@@ -38,7 +38,7 @@ const DECLARATIONS = [
   NavbarComponent,
   ExpandableNavbarSectionComponent,
   FooterComponent,
-  // BreadcrumbsComponent,
+  BreadcrumbsComponent,
   TopLevelCommunityListComponent,
   // CommunityPageComponent,
   CommunityPageSubCollectionListComponent,
