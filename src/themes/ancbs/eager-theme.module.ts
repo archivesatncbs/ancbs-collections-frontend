@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SharedModule } from '../../app/shared/shared.module';
+import { HomePageComponent } from './app/home-page/home-page.component';
 import { HomeNewsComponent } from './app/home-page/home-news/home-news.component';
 import { NavbarComponent } from './app/navbar/navbar.component';
 import { ExpandableNavbarSectionComponent } from './app/navbar/expandable-navbar-section/expandable-navbar-section.component';
@@ -11,8 +12,8 @@ import { NavbarModule } from '../../app/navbar/navbar.module';
 import { SharedBrowseByModule } from '../../app/shared/browse-by/shared-browse-by.module';
 import { ResultsBackButtonModule } from '../../app/shared/results-back-button/results-back-button.module';
 import { FooterComponent } from './app/footer/footer.component';
-import { BreadcrumbsComponent } from './app/breadcrumbs/breadcrumbs.component';
-import { TopLevelCommunityListComponent } from './app/home-page/top-level-community-list/top-level-community-list.component';
+// import { BreadcrumbsComponent } from './app/breadcrumbs/breadcrumbs.component';
+// import { TopLevelCommunityListComponent } from './app/home-page/top-level-community-list/top-level-community-list.component';
 // import { ComcolPageBrowseByComponent } from './app/shared/comcol-page-browse-by/comcol-page-browse-by.component';
 // import { CommunityPageComponent } from './app/community-page/community-page.component';
 import { CommunityPageSubCollectionListComponent } from './app/community-page/sub-collection-list/community-page-sub-collection-list.component';
@@ -30,14 +31,15 @@ const ENTRY_COMPONENTS = [];
 
 const DECLARATIONS = [
   ...ENTRY_COMPONENTS,
+  HomePageComponent,
   HomeNewsComponent,
   HeaderComponent,
   HeaderNavbarWrapperComponent,
   NavbarComponent,
   ExpandableNavbarSectionComponent,
   FooterComponent,
-  BreadcrumbsComponent,
-  TopLevelCommunityListComponent,
+  // BreadcrumbsComponent,
+  // TopLevelCommunityListComponent,
   // CommunityPageComponent,
   CommunityPageSubCollectionListComponent,
   // ComcolPageBrowseByComponent,
