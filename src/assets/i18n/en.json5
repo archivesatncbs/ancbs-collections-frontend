@@ -5235,4 +5235,8 @@
   "repository.sub-collection-list.head": "Collections in this Repository",
 
   "repository.all-lists.head": "Subrepositories and Collections",
+
+  "item.page.collection": "Collection",
+
+  "item.page.series": "Series",
 }

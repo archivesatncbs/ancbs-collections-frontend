@@ -2348,6 +2348,10 @@
 
   "item.page.access-policy-label" : "Access Policy",
 
+  "item.page.collection" : "Collection",
+
+  "item.page.series" : "Series",
+
   "item.page.description": "Description",
 
   "item.page.identifier": "Identifier",

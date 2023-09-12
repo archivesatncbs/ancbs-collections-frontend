@@ -72,11 +72,20 @@
       [fields]="['dc.identifier.uri']"
       [label]="'item.page.uri'">
     </ds-item-page-uri-field>
+
+    <div>
+      <ds-item-page-uri-field [item]="object"
+      [fields]="['dc.identifier.uri']"
+      [label]="'item.page.collection'"
+      [hyperlinktext]="['dc.identifier.other']">
+      </ds-item-page-uri-field>      
+    </div>
+
     <div>
       <ds-generic-item-page-field [item]="object"
       [fields]="['ancbs.copyright-policy.text']"
       [label]="'item.page.access-policy-label'">
-    </ds-generic-item-page-field>
+      </ds-generic-item-page-field>
     </div>
     <!-- <ds-item-page-collections [item]="object"></ds-item-page-collections> -->
     <!-- <div>

@@ -34,4 +34,10 @@ export class ItemPageUriFieldComponent extends ItemPageFieldComponent {
    */
   @Input() label: string;
 
+  /**
+   * Optional text to replace the links with
+   * If undefined, the metadata value (uri) is displayed
+   */
+  @Input() hyperlinktext: string[];
+
 }
