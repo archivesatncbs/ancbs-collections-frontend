@@ -5257,4 +5257,10 @@
   "item.page.collection": "Collection",
 
   "item.page.series": "Series",
+
+  "item.page.subseries": "Subseries",
+
+  "item.page.dates": "Date(s)",
+
+  "item.page.title": "Title"
 }

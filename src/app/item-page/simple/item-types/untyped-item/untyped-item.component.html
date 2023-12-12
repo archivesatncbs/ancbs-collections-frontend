@@ -10,8 +10,8 @@
 </div>
 
 <div class="d-flex flex-row">
-  <ds-themed-item-page-title-field [item]="object" class="mr-auto">
-  </ds-themed-item-page-title-field>
+  <!-- <ds-themed-item-page-title-field [item]="object" class="mr-auto">
+  </ds-themed-item-page-title-field> -->
   <ds-dso-edit-menu></ds-dso-edit-menu>
 </div>
 <div class="row">
@@ -24,8 +24,8 @@
     <div *ngIf="mediaViewer.image || mediaViewer.video" class="mb-2">
       <ds-themed-media-viewer [item]="object"></ds-themed-media-viewer>
     </div>
-    <ds-themed-item-page-file-section [item]="object"></ds-themed-item-page-file-section>
-    <ds-item-page-date-field [item]="object"></ds-item-page-date-field>
+    <!-- <ds-themed-item-page-file-section [item]="object"></ds-themed-item-page-file-section> -->
+    <!-- <ds-item-page-date-field [item]="object"></ds-item-page-date-field> -->
     <ds-themed-metadata-representation-list class="ds-item-page-mixed-author-field"
       [parentItem]="object"
       [itemType]="'Person'"
@@ -51,15 +51,66 @@
   </div>
   <div class="col-xs-12 col-md-6">
     <ds-item-page-abstract-field [item]="object"></ds-item-page-abstract-field>
+
+
+    <!-- TITLE -->
     <ds-generic-item-page-field [item]="object"
-      [fields]="['dc.description']"
+      [fields]="['ancbs.file.name']"
+      [label]="'item.page.title'">
+    </ds-generic-item-page-field>
+    
+    <!-- IDENTIFIER -->
+    <ds-generic-item-page-field [item]="object"
+      [fields]="['ancbs.file.identifier']"
+      [label]="'item.page.identifier'">
+    </ds-generic-item-page-field>
+
+    <!-- DSPACE URI -->
+    <ds-item-page-uri-field [item]="object"
+      [fields]="['dc.identifier.uri']"
+      [label]="'item.page.uri'">
+    </ds-item-page-uri-field>
+    
+    <!-- FILE DESCRIPTION -->
+    <ds-generic-item-page-field [item]="object"
+      [fields]="['ancbs.file.description']"
       [label]="'item.page.description'">
     </ds-generic-item-page-field>
+
+    <!-- FILE DATES -->
     <ds-generic-item-page-field [item]="object"
-    [fields]="['dc.identifier.other']"
-    [label]="'item.page.identifier'">
+      [fields]="['ancbs.file.dates']"
+      [separator]="','"
+      [label]="'item.page.dates'">
     </ds-generic-item-page-field>
+    
+    <!-- COLLECTION NAME -->
     <ds-generic-item-page-field [item]="object"
+      [fields]="['ancbs.collection.name']"
+      [label]="'item.page.collection'">
+    </ds-generic-item-page-field>
+
+    <!-- SERIES NAME -->
+    <ds-generic-item-page-field [item]="object"
+      [fields]="['ancbs.series.name']"
+      [label]="'item.page.series'">
+    </ds-generic-item-page-field>
+
+    <!-- SUBSERIES NAME -->
+    <ds-generic-item-page-field [item]="object"
+      [fields]="['ancbs.subseries.name']"
+      [label]="'item.page.subseries'">
+    </ds-generic-item-page-field>
+
+    <!-- COPYRIGHT POLICY -->
+    <div>
+      <ds-generic-item-page-field [item]="object"
+      [fields]="['ancbs.copyright-policy.text']"
+      [label]="'item.page.access-policy-label'">
+      </ds-generic-item-page-field>
+    </div>
+
+    <!-- <ds-generic-item-page-field [item]="object"
       [fields]="['dc.subject']"
       [separator]="', '"
       [label]="'item.page.subject'">
@@ -67,26 +118,19 @@
     <ds-generic-item-page-field [item]="object"
       [fields]="['dc.identifier.citation']"
       [label]="'item.page.citation'">
-    </ds-generic-item-page-field>
-    <ds-item-page-uri-field [item]="object"
-      [fields]="['dc.identifier.uri']"
-      [label]="'item.page.uri'">
-    </ds-item-page-uri-field>
+    </ds-generic-item-page-field> -->
 
-    <div>
+
+
+<!-- 
       <ds-item-page-uri-field [item]="object"
       [fields]="['dc.identifier.uri']"
       [label]="'item.page.collection'"
-      [hyperlinktext]="['dc.identifier.other']">
+      [hyperlinktext]="['dc.identifier.uri']">
       </ds-item-page-uri-field>      
-    </div>
+ -->
 
-    <div>
-      <ds-generic-item-page-field [item]="object"
-      [fields]="['ancbs.copyright-policy.text']"
-      [label]="'item.page.access-policy-label'">
-      </ds-generic-item-page-field>
-    </div>
+
     <!-- <ds-item-page-collections [item]="object"></ds-item-page-collections> -->
     <!-- <div>
       <a class="btn btn-outline-primary" [routerLink]="[itemPageRoute + '/full']" role="button">
