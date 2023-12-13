@@ -55,7 +55,7 @@
 
     <!-- TITLE -->
     <ds-generic-item-page-field [item]="object"
-      [fields]="['ancbs.file.name']"
+      [fields]="['ancbs.file.title']"
       [label]="'item.page.title'">
     </ds-generic-item-page-field>
     
@@ -68,7 +68,13 @@
     <!-- DSPACE URI -->
     <ds-item-page-uri-field [item]="object"
       [fields]="['dc.identifier.uri']"
-      [label]="'item.page.uri'">
+      [label]="'item.page.ancbs_file_do_uri'">
+    </ds-item-page-uri-field>
+
+    <!-- ASPACE URI -->
+    <ds-item-page-uri-field [item]="object"
+      [fields]="['ancbs.file.uri']"
+      [label]="'item.page.ancbs_file_ao_uri'">
     </ds-item-page-uri-field>
     
     <!-- FILE DESCRIPTION -->
@@ -86,19 +92,19 @@
     
     <!-- COLLECTION NAME -->
     <ds-generic-item-page-field [item]="object"
-      [fields]="['ancbs.collection.name']"
+      [fields]="['ancbs.collection.title']"
       [label]="'item.page.collection'">
     </ds-generic-item-page-field>
 
     <!-- SERIES NAME -->
     <ds-generic-item-page-field [item]="object"
-      [fields]="['ancbs.series.name']"
+      [fields]="['ancbs.series.title']"
       [label]="'item.page.series'">
     </ds-generic-item-page-field>
 
     <!-- SUBSERIES NAME -->
     <ds-generic-item-page-field [item]="object"
-      [fields]="['ancbs.subseries.name']"
+      [fields]="['ancbs.subseries.title']"
       [label]="'item.page.subseries'">
     </ds-generic-item-page-field>
 
