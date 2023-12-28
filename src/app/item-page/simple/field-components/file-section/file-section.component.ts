@@ -67,7 +67,7 @@ export class FileSectionComponent implements OnInit {
     } else {
       this.currentPage++;
     }
-    this.bitstreamDataService.findAllByItemAndBundleName(this.item, 'ORIGINAL', {
+    this.bitstreamDataService.findAllByItemAndBundleName(this.item, 'PDFM', {
       currentPage: this.currentPage,
       elementsPerPage: this.pageSize
     }).pipe(
