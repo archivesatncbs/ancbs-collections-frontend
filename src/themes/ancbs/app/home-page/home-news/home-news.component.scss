@@ -20,7 +20,9 @@
 
     .container {
       position: relative;
-      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+      // text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+      display: flex;
+      justify-content: center;
 
       &:before, &:after {
         content: '';
@@ -72,6 +74,19 @@
       color: var(--ds-home-news-link-hover-color);
     }
   }
+  
+  .display-3 {
+    text-align: center;
+    padding: 5%;
+    color: #824141;
+  }
+
+  .lead {
+    text-align: center;
+    // padding: 2rem;
+    color: #463a3a;
+  }
+
 }
 
 
