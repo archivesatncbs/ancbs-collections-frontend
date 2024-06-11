@@ -1336,7 +1336,7 @@
 
   "cookies.consent.content-notice.description": "We collect and process your personal information for the following purposes: <strong>Authentication, Preferences, Acknowledgement and Statistics</strong>. <br/> To learn more, please read our {privacyPolicy}.",
 
-  "cookies.consent.content-notice.description.no-privacy": "We collect and process your personal information for the following purposes: <strong>Authentication, Preferences, Acknowledgement and Statistics</strong>.",
+  "cookies.consent.content-notice.description.no-privacy": "The Archives at NCBS is a public collecting centre for the history of science in contemporary India. It makes no representation that it is the copyright owner for all of its records. While there is open access to view digital collections, the public must obtain all necessary rights and clearances before any use of material. <br> While you are on this website, we may collect and process your personal information for the following purposes: <strong>Authentication, Preferences, Acknowledgement and Statistics</strong>",
 
   "cookies.consent.content-notice.learnMore": "Customize",
 
@@ -5266,5 +5266,21 @@
 
   "item.page.ancbs_file_ao_uri": "Catalogue URI",
 
-  "item.page.ancbs_file_do_uri": "Digital Object URI"
+  "item.page.ancbs_file_do_uri": "Digital Object URI",
+
+  "admin.access-control.groups.form.members-list.search.scope.metadata": "Metadata",
+
+  "admin.access-control.groups.form.members-list.search.scope.email": "E-mail (exact)",
+
+  "admin.access-control.groups.form.subgroups-list.table.edit.currentGroup": "Current group",
+
+  "advanced-workflow-action-select-reviewer.groups.form.reviewers-list.search.scope.metadata": "Metadata",
+
+  "advanced-workflow-action-select-reviewer.groups.form.reviewers-list.search.scope.email": "E-mail (exact)",
+
+  "curation-task.task.register-doi.label": "Register DOI",
+
+  "footer.link.ancbs.takedown": "Digital Material Takedown Policy",
+
+  "login.form.or-divider": "or",
 }
