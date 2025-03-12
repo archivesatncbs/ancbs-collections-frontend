@@ -18,10 +18,10 @@
     <ds-truncatable [id]="dso.id" *ngIf="object !== undefined && object !== null">
       <a *ngIf="linkType != linkTypes.None" [target]="(linkType == linkTypes.ExternalLink) ? '_blank' : '_self'" [attr.rel]="(linkType == linkTypes.ExternalLink) ? 'noopener noreferrer' : null"
          [routerLink]="[itemPageRoute]" class="lead item-list-title dont-break-out"
-         [innerHTML]="dsoTitle"></a>
+         [innerHTML]="firstMetadataValue('ancbs.file.title')"></a>
       <span *ngIf="linkType == linkTypes.None" class="lead item-list-title dont-break-out"
-            [innerHTML]="dsoTitle"></span>
-      <span class="text-muted">
+            [innerHTML]="firstMetadataValue('ancbs.file.title')"></span>
+      <!-- <span class="text-muted">
         <ds-truncatable-part [id]="dso.id" [minLines]="1">
           <ng-container *ngIf="dso.firstMetadataValue('dc.publisher') || dso.firstMetadataValue('dc.date.issued')">
             (<span *ngIf="dso.firstMetadataValue('dc.publisher')" class="item-list-publisher" [innerHTML]="firstMetadataValue('dc.publisher')"></span>
@@ -35,12 +35,27 @@
             </span>
           </span>
         </ds-truncatable-part>
-      </span>
-      <div *ngIf="dso.firstMetadataValue('dc.description.abstract')" class="item-list-abstract">
+      </span> -->
+      <div *ngIf="dso.firstMetadataValue('ancbs.file.identifier')" class="text-monospace font-weight-bold">
+        <ds-truncatable-part [id]="dso.id" [minLines]="1"><span
+          [innerHTML]="firstMetadataValue('ancbs.file.identifier')"></span>
+        </ds-truncatable-part>
+      </div>
+      <div *ngIf="dso.firstMetadataValue('ancbs.file.description')" class="item-list-abstract">
+        <ds-truncatable-part [id]="dso.id" [minLines]="3"><span
+          [innerHTML]="firstMetadataValue('ancbs.file.description')"></span>
+        </ds-truncatable-part>
+      </div>
+      <div *ngIf="dso.firstMetadataValue('ancbs.file.dates')" class="item-list-date font-italic">
+        <ds-truncatable-part [id]="dso.id" [minLines]="3">(<span
+          [innerHTML]="firstMetadataValue('ancbs.file.dates')"></span>)
+        </ds-truncatable-part>
+      </div>
+      <!-- <div *ngIf="dso.firstMetadataValue('dc.description.abstract')" class="item-list-abstract">
         <ds-truncatable-part [id]="dso.id" [minLines]="3"><span
           [innerHTML]="firstMetadataValue('dc.description.abstract')"></span>
         </ds-truncatable-part>
-      </div>
+      </div> -->
     </ds-truncatable>
   </div>
 </div>
