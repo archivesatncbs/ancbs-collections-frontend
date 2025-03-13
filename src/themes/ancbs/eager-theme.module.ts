@@ -21,7 +21,7 @@ import { CommunityPageSubCollectionListComponent } from './app/community-page/su
 // import { CommunityListComponent } from './app/community-list-page/community-list/community-list.component';
 // import { CommunityPageSubCommunityListComponent } from './app/community-page/sub-community-list/community-page-sub-community-list.component';
 import { LoginPageComponent } from './app/login-page/login-page.component';
-
+// import { AdminSidebarComponent } from './app/admin/admin-sidebar/admin-sidebar.component';
 
 /**
  * Add components that use a custom decorator to ENTRY_COMPONENTS as well as DECLARATIONS.
@@ -47,6 +47,7 @@ const DECLARATIONS = [
   // CommunityListComponent,
   // CommunityPageSubCommunityListComponent,
   LoginPageComponent,
+  // AdminSidebarComponent,
 ];
 
 @NgModule({
