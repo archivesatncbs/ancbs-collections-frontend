@@ -1,5 +1,4 @@
 {
-
   "401.help": "You're not authorized to access this page. You can use the button below to get back to the home page.",
 
   "401.link.home-page": "Take me to the home page",
@@ -32,7 +31,7 @@
 
   "error-page.description.404": "Page not found",
 
-  "error-page.orcid.generic-error": "An error occurred during login via ORCID. Make sure you have shared your ORCID account email address with Collections |  Archives at NCBS. If the error persists, contact the administrator",
+  "error-page.orcid.generic-error": "An error occurred during login via ORCID. Make sure you have shared your ORCID account email address with DSpace. If the error persists, contact the administrator",
 
   "access-status.embargo.listelement.badge": "Embargo",
 
@@ -150,7 +149,7 @@
 
   "admin.registries.metadata.breadcrumbs": "Metadata registry",
 
-  "admin.registries.metadata.description": "The metadata registry maintains a list of all metadata fields available in the repository. These fields may be divided amongst multiple schemas. However, Collections | Archives at NCBS requires the qualified Dublin Core schema.",
+  "admin.registries.metadata.description": "The metadata registry maintains a list of all metadata fields available in the repository. These fields may be divided amongst multiple schemas. However, DSpace requires the qualified Dublin Core schema.",
 
   "admin.registries.metadata.form.create": "Create metadata schema",
 
@@ -1380,7 +1379,7 @@
 
   "cookies.consent.content-notice.description": "We collect and process your personal information for the following purposes: <strong>Authentication, Preferences, Acknowledgement and Statistics</strong>. <br/> To learn more, please read our {privacyPolicy}.",
 
-  "cookies.consent.content-notice.description.no-privacy": "The Archives at NCBS is a public collecting centre for the history of science in contemporary India. It makes no representation that it is the copyright owner for all of its records. While there is open access to view digital collections, the public must obtain all necessary rights and clearances before any use of material. <br> While you are on this website, we may collect and process your personal information for the following purposes: <strong>Authentication, Preferences, Acknowledgement and Statistics</strong>",
+  "cookies.consent.content-notice.description.no-privacy": "We collect and process your personal information for the following purposes: <strong>Authentication, Preferences, Acknowledgement and Statistics</strong>.",
 
   "cookies.consent.content-notice.learnMore": "Customize",
 
@@ -1520,7 +1519,7 @@
 
   "dso-selector.set-scope.community.head": "Select a search scope",
 
-  "dso-selector.set-scope.community.button": "Search all of Archives at NCBS",
+  "dso-selector.set-scope.community.button": "Search all of DSpace",
 
   "dso-selector.set-scope.community.or-divider": "or",
 
@@ -1672,7 +1671,7 @@
 
   "file-section.error.header": "Error obtaining files for this item",
 
-  "footer.copyright": "2019 - {{ year }}",
+  "footer.copyright": "copyright © 2002-{{ year }}",
 
   "footer.link.dspace": "DSpace software",
 
@@ -1902,7 +1901,7 @@
 
   "home.title": "Home",
 
-  "home.top-level-communities.head": "Communities in Archives at NCBS",
+  "home.top-level-communities.head": "Communities in DSpace",
 
   "home.top-level-communities.help": "Select a community to browse its collections.",
 
@@ -1936,7 +1935,7 @@
 
   "info.feedback.title": "Feedback",
 
-  "info.feedback.info": "Thanks for sharing your feedback about Collections | Archives at NCBS. Your comments are appreciated!",
+  "info.feedback.info": "Thanks for sharing your feedback about the DSpace system. Your comments are appreciated!",
 
   "info.feedback.email_help": "This address will be used to follow up on your feedback.",
 
@@ -2560,6 +2559,14 @@
 
   "item.preview.oaire.citation.volume": "Volume",
 
+  "item.preview.dc.relation.hasversion": "Has version",
+
+  "item.preview.dc.relation.ispartofseries": "Is part of series",
+
+  "item.preview.dc.rights": "Rights",
+
+  "item.preview.dc.identifier.other": "Other Identifier",
+
   "item.preview.dc.relation.issn": "ISSN",
 
   "item.preview.dc.identifier.isbn": "ISBN",
@@ -2868,7 +2875,7 @@
 
   "login.form.forgot-password": "Have you forgotten your password?",
 
-  "login.form.header": "Please log in to Archives at NCBS",
+  "login.form.header": "Please log in to DSpace",
 
   "login.form.new-user": "New user? Click here to register.",
 
@@ -2886,7 +2893,7 @@
 
   "login.breadcrumbs": "Login",
 
-  "logout.form.header": "Log out from Collections | Archives at NCBS",
+  "logout.form.header": "Log out from DSpace",
 
   "logout.form.submit": "Log out",
 
@@ -2920,7 +2927,7 @@
 
   "menu.section.browse_community_by_title": "By Title",
 
-  "menu.section.browse_global": "All of Archives at NCBS",
+  "menu.section.browse_global": "All of DSpace",
 
   "menu.section.browse_global_by_author": "By Author",
 
@@ -3142,7 +3149,7 @@
 
   "nav.expandable-navbar-section-suffix": "(submenu)",
 
-  "nav.browse.header": "All of Collections | Archives at NCBS",
+  "nav.browse.header": "All of DSpace",
 
   "nav.community-browse.header": "By Community",
 
@@ -3528,7 +3535,7 @@
 
   "register-page.registration.header": "New user registration",
 
-  "register-page.registration.info": "Register an account to subscribe to collections for email updates, and submit new items to Collections | Archives at NCBS.",
+  "register-page.registration.info": "Register an account to subscribe to collections for email updates, and submit new items to DSpace.",
 
   "register-page.registration.email": "Email Address *",
 
@@ -3610,9 +3617,9 @@
 
   "repository.image.logo": "Repository logo",
 
-  "repository.title": "Collections | Archives at NCBS Repository",
+  "repository.title": "DSpace Repository",
 
-  "repository.title.prefix": "Collections | Archives at NCBS Repository :: ",
+  "repository.title.prefix": "DSpace Repository :: ",
 
   "resource-policies.add.button": "Add",
 
@@ -3804,6 +3811,10 @@
 
   "search.filters.filter.creativeDatePublished.label": "Search date published",
 
+  "search.filters.filter.creativeDatePublished.min.label": "Start",
+
+  "search.filters.filter.creativeDatePublished.max.label": "End",
+
   "search.filters.filter.creativeWorkEditor.head": "Editor",
 
   "search.filters.filter.creativeWorkEditor.placeholder": "Editor",
@@ -3968,7 +3979,7 @@
 
   "search.form.search_dspace": "All repository",
 
-  "search.form.scope.all": "All of Archives at NCBS",
+  "search.form.scope.all": "All of DSpace",
 
   "search.results.head": "Search Results",
 
@@ -4118,7 +4129,7 @@
 
   "submission.import-external.title.none": "Import metadata from an external source",
 
-  "submission.import-external.page.hint": "Enter a query above to find items from the web to import in to Collections | Archives at NCBS.",
+  "submission.import-external.page.hint": "Enter a query above to find items from the web to import in to DSpace.",
 
   "submission.import-external.back-to-my-dspace": "Back to MyDSpace",
 
@@ -4324,6 +4335,8 @@
 
   "submission.sections.describe.relationship-lookup.search-tab.tab-title.JournalIssue": "Local Journal Issues ({{ count }})",
 
+  "submission.sections.describe.relationship-lookup.search-tab.tab-title.isJournalVolumeOfIssue": "Local Journal Volumes ({{ count }})",
+
   "submission.sections.describe.relationship-lookup.search-tab.tab-title.isJournalVolumeOfPublication": "Local Journal Volumes ({{ count }})",
 
   "submission.sections.describe.relationship-lookup.search-tab.tab-title.JournalVolume": "Local Journal Volumes ({{ count }})",
@@ -4370,6 +4383,8 @@
 
   "submission.sections.describe.relationship-lookup.title.JournalIssue": "Journal Issues",
 
+  "submission.sections.describe.relationship-lookup.title.isJournalVolumeOfIssue": "Journal Volumes",
+
   "submission.sections.describe.relationship-lookup.title.isJournalVolumeOfPublication": "Journal Volumes",
 
   "submission.sections.describe.relationship-lookup.title.JournalVolume": "Journal Volumes",
@@ -4409,6 +4424,8 @@
   "submission.sections.describe.relationship-lookup.selection-tab.title.isAuthorOfPublication": "Selected Authors",
 
   "submission.sections.describe.relationship-lookup.selection-tab.title.isJournalOfPublication": "Selected Journals",
+
+  "submission.sections.describe.relationship-lookup.selection-tab.title.isJournalVolumeOfIssue": "Selected Journal Volume",
 
   "submission.sections.describe.relationship-lookup.selection-tab.title.isJournalVolumeOfPublication": "Selected Journal Volume",
 
@@ -4820,6 +4837,8 @@
 
   "subscriptions.tooltip": "Subscribe",
 
+  "subscriptions.unsubscribe": "Unsubscribe",
+
   "subscriptions.modal.title": "Subscriptions",
 
   "subscriptions.modal.type-frequency": "Type and frequency",
@@ -4886,7 +4905,7 @@
 
   "thumbnail.person.placeholder": "No Profile Picture Available",
 
-  title: "Collections | Archives at NCBS",
+  "title": "DSpace",
 
   "vocabulary-treeview.header": "Hierarchical tree view",
 
@@ -5419,53 +5438,4 @@
   "live-region.ordering.dropped": "{{ itemName }}, dropped at position {{ index }} of {{ length }}.",
 
   "dynamic-form-array.sortable-list.label": "Sortable list",
-  "footer.link.ancbs": "Archives at NCBS",
-
-  "footer.link.ancbs.access": "How to Access",
-
-  "footer.link.ancbs.catalogue": "Catalogue",
-
-  "footer.link.ancbs.collections": "Collections",
-
-  "item.page.access-policy-label": "Access Policy",
-
-  "item.page.identifier": "Identifier",
-
-  "home.top-level-repositories.head": "Repositories in Archives at NCBS",
-
-  "repository.page.handle": "Permanent URI for this repository",
-
-  "repository.sub-collection-list.head": "Collections in this Repository",
-
-  "repository.all-lists.head": "Subrepositories and Collections",
-
-  "item.page.collection": "Collection",
-
-  "item.page.series": "Series",
-
-  "item.page.subseries": "Subseries",
-
-  "item.page.dates": "Date(s)",
-
-  "item.page.title": "Title",
-
-  "item.page.ancbs_file_ao_uri": "Catalogue URI",
-
-  "item.page.ancbs_file_do_uri": "Digital Object URI",
-
-  "admin.access-control.groups.form.members-list.search.scope.metadata": "Metadata",
-
-  "admin.access-control.groups.form.members-list.search.scope.email": "E-mail (exact)",
-
-  "admin.access-control.groups.form.subgroups-list.table.edit.currentGroup": "Current group",
-
-  "advanced-workflow-action-select-reviewer.groups.form.reviewers-list.search.scope.metadata": "Metadata",
-
-  "advanced-workflow-action-select-reviewer.groups.form.reviewers-list.search.scope.email": "E-mail (exact)",
-
-  "curation-task.task.register-doi.label": "Register DOI",
-
-  "footer.link.ancbs.takedown": "Digital Material Takedown Policy",
-
-  "login.form.or-divider": "or",
 }
