@@ -1,4 +1,5 @@
 {
+
   "401.help": "You're not authorized to access this page. You can use the button below to get back to the home page.",
 
   "401.link.home-page": "Take me to the home page",
@@ -31,7 +32,7 @@
 
   "error-page.description.404": "Page not found",
 
-  "error-page.orcid.generic-error": "An error occurred during login via ORCID. Make sure you have shared your ORCID account email address with DSpace. If the error persists, contact the administrator",
+  "error-page.orcid.generic-error": "An error occurred during login via ORCID. Make sure you have shared your ORCID account email address with Collections |  Archives at NCBS. If the error persists, contact the administrator",
 
   "access-status.embargo.listelement.badge": "Embargo",
 
@@ -149,7 +150,7 @@
 
   "admin.registries.metadata.breadcrumbs": "Metadata registry",
 
-  "admin.registries.metadata.description": "The metadata registry maintains a list of all metadata fields available in the repository. These fields may be divided amongst multiple schemas. However, DSpace requires the qualified Dublin Core schema.",
+  "admin.registries.metadata.description": "The metadata registry maintains a list of all metadata fields available in the repository. These fields may be divided amongst multiple schemas. However, Collections | Archives at NCBS requires the qualified Dublin Core schema.",
 
   "admin.registries.metadata.form.create": "Create metadata schema",
 
@@ -1377,9 +1378,9 @@
 
   "cookies.consent.content-notice.title": "Cookie Consent",
 
-  "cookies.consent.content-notice.description": "We collect and process your personal information for the following purposes: <strong>Authentication, Preferences, Acknowledgement and Statistics</strong>. <br/> To learn more, please read our {privacyPolicy}.",
+  "cookies.consent.content-notice.description": "The Archives at NCBS is a public collecting centre for the history of science in contemporary India. It makes no representation that it is the copyright owner for all of its records. While there is open access to view digital collections, the public must obtain all necessary rights and clearances before any use of material.",
 
-  "cookies.consent.content-notice.description.no-privacy": "We collect and process your personal information for the following purposes: <strong>Authentication, Preferences, Acknowledgement and Statistics</strong>.",
+  "cookies.consent.content-notice.description.no-privacy": "The Archives at NCBS is a public collecting centre for the history of science in contemporary India. It makes no representation that it is the copyright owner for all of its records. While there is open access to view digital collections, the public must obtain all necessary rights and clearances before any use of material. <br> While you are on this website, we may collect and process your personal information for the following purposes: <strong>Authentication, Preferences, Acknowledgement and Statistics</strong>",
 
   "cookies.consent.content-notice.learnMore": "Customize",
 
@@ -1519,7 +1520,7 @@
 
   "dso-selector.set-scope.community.head": "Select a search scope",
 
-  "dso-selector.set-scope.community.button": "Search all of DSpace",
+  "dso-selector.set-scope.community.button": "Search all of Archives at NCBS",
 
   "dso-selector.set-scope.community.or-divider": "or",
 
@@ -1671,7 +1672,7 @@
 
   "file-section.error.header": "Error obtaining files for this item",
 
-  "footer.copyright": "copyright © 2002-{{ year }}",
+  "footer.copyright": "2019 - {{ year }}",
 
   "footer.link.dspace": "DSpace software",
 
@@ -2564,8 +2565,6 @@
   "item.preview.dc.relation.ispartofseries": "Is part of series",
 
   "item.preview.dc.rights": "Rights",
-
-  "item.preview.dc.identifier.other": "Other Identifier",
 
   "item.preview.dc.relation.issn": "ISSN",
 
@@ -4905,7 +4904,7 @@
 
   "thumbnail.person.placeholder": "No Profile Picture Available",
 
-  "title": "DSpace",
+  title: "Digital Object | Archives at NCBS",
 
   "vocabulary-treeview.header": "Hierarchical tree view",
 
@@ -5438,4 +5437,40 @@
   "live-region.ordering.dropped": "{{ itemName }}, dropped at position {{ index }} of {{ length }}.",
 
   "dynamic-form-array.sortable-list.label": "Sortable list",
+
+  "footer.link.ancbs": "Archives at NCBS",
+
+  "footer.link.ancbs.access": "How to Access",
+
+  "footer.link.ancbs.takedown": "Digital Material Takedown Policy",
+
+  "footer.link.ancbs.catalogue": "Catalogue",
+
+  "footer.link.ancbs.collections": "Collections",
+
+  "item.page.ancbs.access-policy-label": "Access Policy",
+
+  "item.page.ancbs.collection": "Collection",
+
+  "item.page.ancbs.series": "Series",
+
+  "item.page.ancbs.subseries": "Sub-Series",
+
+  "item.page.ancbs.dates": "Date(s)",
+
+  "item.page.ancbs.catalogue.uri": "Catalogue URI",
+
+  "item.page.ancbs.digital-object.uri": "Digital Object URI",
+
+  "item.page.ancbs.description": "Description",
+
+  "item.page.ancbs.conditions-governing-access": "Conditions Governing Access",
+
+  "item.page.ancbs.conditions-governing-use": "Conditions Governing Use",
+
+  "footer.ancbs.copyright": "2019 - {{ year }}",
+
+  "item.page.ancbs.title": "Title",
+
+  "item.page.ancbs.identifier": "Identifier",
 }

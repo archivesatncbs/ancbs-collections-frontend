@@ -2,8 +2,8 @@
 <div class="row" *ngIf="iiifEnabled">
   <div class="col-12">
     <ds-mirador-viewer id="iiif-viewer"
-                   [object]="object"
-                   [searchable]="iiifSearchEnabled"
+      [object]="object"
+      [searchable]="iiifSearchEnabled"
                    [query]="iiifQuery$ | async">
     </ds-mirador-viewer>
   </div>
@@ -56,63 +56,63 @@
     <!-- TITLE -->
     <ds-generic-item-page-field [item]="object"
       [fields]="['ancbs.file.title']"
-      [label]="'item.page.title'">
+      [label]="'item.page.ancbs.title'">
     </ds-generic-item-page-field>
-    
+
     <!-- IDENTIFIER -->
     <ds-generic-item-page-field [item]="object"
       [fields]="['ancbs.file.identifier']"
-      [label]="'item.page.identifier'">
+      [label]="'item.page.ancbs.identifier'">
     </ds-generic-item-page-field>
 
     <!-- DSPACE URI -->
     <ds-item-page-uri-field [item]="object"
       [fields]="['dc.identifier.uri']"
-      [label]="'item.page.ancbs_file_do_uri'">
+      [label]="'item.page.ancbs.digital-object.uri'">
     </ds-item-page-uri-field>
 
     <!-- ASPACE URI -->
     <ds-item-page-uri-field [item]="object"
       [fields]="['ancbs.file.uri']"
-      [label]="'item.page.ancbs_file_ao_uri'">
+      [label]="'item.page.ancbs.catalogue.uri'">
     </ds-item-page-uri-field>
-    
+
     <!-- FILE DESCRIPTION -->
     <ds-generic-item-page-field [item]="object"
       [fields]="['ancbs.file.description']"
-      [label]="'item.page.description'">
+      [label]="'item.page.ancbs.description'">
     </ds-generic-item-page-field>
 
     <!-- FILE DATES -->
     <ds-generic-item-page-field [item]="object"
       [fields]="['ancbs.file.dates']"
       [separator]="','"
-      [label]="'item.page.dates'">
+      [label]="'item.page.ancbs.dates'">
     </ds-generic-item-page-field>
-    
-    <!-- COLLECTION NAME -->
+
+    <!-- COLLECTION TITLE -->
     <ds-generic-item-page-field [item]="object"
       [fields]="['ancbs.collection.title']"
-      [label]="'item.page.collection'">
+      [label]="'item.page.ancbs.collection'">
     </ds-generic-item-page-field>
 
-    <!-- SERIES NAME -->
+    <!-- SERIES TITLE -->
     <ds-generic-item-page-field [item]="object"
       [fields]="['ancbs.series.title']"
-      [label]="'item.page.series'">
+      [label]="'item.page.ancbs.series'">
     </ds-generic-item-page-field>
 
-    <!-- SUBSERIES NAME -->
+    <!-- SUBSERIES TITLE -->
     <ds-generic-item-page-field [item]="object"
       [fields]="['ancbs.subseries.title']"
-      [label]="'item.page.subseries'">
+      [label]="'item.page.ancbs.subseries'">
     </ds-generic-item-page-field>
 
-    <!-- COPYRIGHT POLICY -->
+    <!-- CONDITIONS GOVERNING USE -->
     <div>
       <ds-generic-item-page-field [item]="object"
-      [fields]="['ancbs.copyright-policy.text']"
-      [label]="'item.page.access-policy-label'">
+      [fields]="['ancbs.note.conditions-governing-use']"
+      [label]="'item.page.ancbs.conditions-governing-use'">
       </ds-generic-item-page-field>
     </div>
 
@@ -128,7 +128,7 @@
 
 
 
-<!-- 
+    <!-- 
       <ds-item-page-uri-field [item]="object"
       [fields]="['dc.identifier.uri']"
       [label]="'item.page.collection'"
