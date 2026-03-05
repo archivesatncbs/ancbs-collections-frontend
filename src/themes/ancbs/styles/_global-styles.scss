@@ -1,0 +1,70 @@
+// Add any global css for the theme here
+
+// imports the base global style
+@import '../../../styles/_global-styles.scss';
+
+.facet-filter, .setting-option, .advanced-search {
+  background-color: var(--bs-light);
+  border-radius: var(--bs-border-radius);
+
+  &.p-3 {
+    // Needs !important because the original bootstrap class uses it
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.5rem !important;
+  }
+
+  .bg-secondary {
+    background-color: var(--bs-primary);
+  }
+
+  h4, .h4 {
+    font-size: 1.1rem
+  }
+}
+
+.bg-secondary {
+  --bs-bg-opacity: 1;
+  background-color: $ancbs-darkbrown !important;
+}
+
+.btn-primary, .btn-secondary, .btn-outline-primary {
+  color: white;
+  text-decoration: none;
+  background-color: $ancbs-brown;
+  border-color: $ancbs-brown;
+}
+
+.btn-secondary.active {
+  color: var(--bs-btn-hover-color);
+  text-decoration: none;
+  background-color: $ancbs-darkbrown;
+  border-color: $ancbs-darkbrown;
+}
+
+.btn-link:hover {
+  color: $ancbs-darkbrown;
+}
+
+
+.btn-primary:hover, .btn-secondary:hover {
+  color: var(--bs-btn-hover-color);
+  text-decoration: none;
+  background-color: $ancbs-darkbrown;
+  border-color: $ancbs-darkbrown;
+}
+
+.btn-outline-primary:hover {
+  color: var(--bs-btn-hover-color);
+  text-decoration: none;
+  background-color: $ancbs-darkbrown;
+  border-color: $ancbs-darkbrown;
+}
+
+a:hover {
+  color: $ancbs-darkbrown;
+  text-decoration: underline;
+}
+
+div.breadcrumb-item-limiter a {
+  color: $ancbs-darkbrown;
+}

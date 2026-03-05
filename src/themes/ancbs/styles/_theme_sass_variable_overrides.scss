@@ -1,0 +1,87 @@
+// DSpace works with CSS variables for its own components, and has a mapping of all bootstrap Sass
+// variables to CSS equivalents (see src/styles/_bootstrap_variables_mapping.scss). However Bootstrap
+// still uses Sass variables internally. So if you want to override bootstrap (or other sass
+// variables) you can do so here. Their CSS counterparts will include the changes you make here
+
+// $font-family-sans-serif:      -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+//
+// $gray-700: #495057 !default;  // Bootstrap $gray-700
+// $gray-100: #f8f9fa !default;  //           $gray-100
+//
+// $blue:   #2B4E72 !default;
+// $green:  #94BA65 !default;
+// $cyan:   #006666 !default;
+// $yellow: #ec9433 !default;
+// $red:    #CF4444 !default;
+// $dark:   darken($blue, 17%) !default;
+//
+// $primary: $blue !default;
+// $secondary: $gray-700 !default;
+// $success: $green !default;
+// $info: $cyan !default;
+// $warning: $yellow !default;
+// $danger: $red !default;
+// $light: $gray-100 !default;
+// $dark: $dark !default;
+//
+// $link-color: $info !default;
+
+/* Archives at NCBS theme colors*/
+$ancbs-brown: #824141;
+$ancbs-darkbrown: #463a3a;
+$ancbs-red: #d44132;    
+$ancbs-deepgreen:#467d80;       
+$ancbs-green: #376e55;
+$ancbs-blue: #3c6ea7;   
+
+
+$ancbs-white1:#e6ede8;
+$ancbs-white2:#e3e3ed;
+$ancbs-white3:#e8d9c0;
+$ancbs-white4:#eddede;
+
+
+// Add new semantic colors here (you don't need to add existing semantic colors)
+// $primary:   #43515f;  // Gray
+$primary:   $ancbs-brown;
+$secondary: $ancbs-darkbrown;
+$success:   $ancbs-green;
+$info:      $ancbs-brown;
+$warning:   #ec9433;
+$danger:    $ancbs-red;
+$light:     $ancbs-white4;
+$dark:      $ancbs-darkbrown;
+
+@import '../../../styles/_variables.scss';
+$theme-custom-semantic-colors: (
+);
+$theme-colors: map-merge($theme-colors, $theme-custom-semantic-colors);
+
+/*** OTHER BOOTSTRAP VARIABLES ***/
+
+$min-contrast-ratio: 2.06 !default;
+
+$body-color: #343a40;       // As Bootstrap $gray-800
+
+$link-color: $ancbs-brown;       // Blue green, as DSpace $info
+$link-decoration: bolder;
+// $link-hover-color: darken($link-color, 15%);
+$link-hover-color: $ancbs-darkbrown;
+$link-hover-decoration: underline;
+
+$table-accent-bg: #f8f9fa;  // As Bootstrap $gray-100
+$table-hover-bg: #ced4da;   // As Bootstrap $gray-400
+
+$navbar-dark-color: #fff;
+
+
+/*** CUSTOM DSPACE VARIABLES ***/
+
+$ds-home-news-link-color: $ancbs-brown;
+$ds-header-navbar-border-bottom-color: $ancbs-brown;
+
+$ds-breadcrumb-link-color: $ancbs-brown;
+$ds-breadcrumb-link-active-color: $ancbs-darkbrown;
+
+$ds-navbar-link-color: $ancbs-brown;
+$ds-header-icon-color: $ancbs-brown;
