@@ -52,7 +52,7 @@ export class FileSectionComponent implements OnInit {
 
   @Input() item: Item;
 
-  label = 'item.page.files';
+  label = 'item.page.ancbs.pdfm';
 
   separator = '<br/>';
 
@@ -106,7 +106,7 @@ export class FileSectionComponent implements OnInit {
     } else {
       this.currentPage++;
     }
-    this.bitstreamDataService.findAllByItemAndBundleName(this.item, 'ORIGINAL', {
+    this.bitstreamDataService.findAllByItemAndBundleName(this.item, 'PDFM', {
       currentPage: this.currentPage,
       elementsPerPage: this.pageSize,
     }, true, true, followLink('accessStatus')).pipe(

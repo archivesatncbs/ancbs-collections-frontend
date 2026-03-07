@@ -23,51 +23,45 @@
       }
     </div>
 
+    <!-- ancbs.file.title -->
     @if (object !== undefined && object !== null) {
       <ds-truncatable [id]="dso.id">
         @if (linkType !== linkTypes.None) {
           <a [target]="(linkType === linkTypes.ExternalLink) ? '_blank' : '_self'" [attr.rel]="(linkType === linkTypes.ExternalLink) ? 'noopener noreferrer' : null"
             [routerLink]="[itemPageRoute]" class="lead item-list-title dont-break-out"
-          [innerHTML]="dsoTitle" role="link" tabindex="0"></a>
+          [innerHTML]="firstMetadataValue('ancbs.file.title')" role="link" tabindex="0"></a>
         }
         @if (linkType === linkTypes.None) {
           <span class="lead item-list-title dont-break-out"
-          [innerHTML]="dsoTitle"></span>
+          [innerHTML]="firstMetadataValue('ancbs.file.title')"></span>
         }
-        <span class="text-muted">
-          <ds-truncatable-part [id]="dso.id" [minLines]="1">
-            @if (dso.firstMetadataValue('dc.publisher') || dso.firstMetadataValue('dc.date.issued')) {
-              (@if (dso.firstMetadataValue('dc.publisher')) {
-              <span class="item-list-publisher" [innerHTML]="firstMetadataValue('dc.publisher')"></span>
+
+      <!-- ancbs.file.identifier -->  
+      <div class="font-monospace fw-bold">    
+        <ds-truncatable-part [id]="dso.id" [minLines]="1">
+          @if (dso.firstMetadataValue('ancbs.file.identifier')) {
+            <span [innerHTML]="firstMetadataValue('ancbs.file.identifier')"></span>
+          }
+        </ds-truncatable-part>
+      </div>
+
+      <!-- ancbs.file.dates -->
+      <div class="text-muted">
+        <ds-truncatable-part [id]="dso.id" [minLines]="1">
+          @if (dso.firstMetadataValue('ancbs.file.dates')) {
+              <span class="item-list-date" [innerHTML]="firstMetadataValue('ancbs.file.dates')"></span>
             }
-            @if (dso.firstMetadataValue('dc.publisher') && dso.firstMetadataValue('dc.date.issued')) {
-              <span>, </span>
+        </ds-truncatable-part>
+      </div>
+
+      <!-- ancbs.collection.title -->
+      <div class="fst-italic">
+        <ds-truncatable-part [id]="dso.id" [minLines]="1">
+          @if (dso.firstMetadataValue('ancbs.collection.title')) {
+              <span class="item-list-abstract" [innerHTML]="firstMetadataValue('ancbs.collection.title')"></span>
             }
-            @if (dso.firstMetadataValue('dc.date.issued')) {
-              <span class="item-list-date" [innerHTML]="firstMetadataValue('dc.date.issued')"></span>
-              })
-            }
-            @if (dso.allMetadata(['dc.contributor.author', 'dc.creator', 'dc.contributor.*']).length > 0) {
-              <span class="item-list-authors">
-                @for (author of allMetadataValues(['dc.contributor.author', 'dc.creator', 'dc.contributor.*']); track author; let last = $last) {
-                  <span>
-                    <span [innerHTML]="author"><span [innerHTML]="author"></span></span>
-                    @if (!last) {
-                      <span>; </span>
-                    }
-                  </span>
-                }
-              </span>
-            }
-          </ds-truncatable-part>
-        </span>
-        @if (dso.firstMetadataValue('dc.description.abstract')) {
-          <div class="item-list-abstract">
-            <ds-truncatable-part [id]="dso.id" [minLines]="3"><span
-            [innerHTML]="firstMetadataValue('dc.description.abstract')"></span>
-          </ds-truncatable-part>
-        </div>
-      }
+        </ds-truncatable-part>
+      </div>
     </ds-truncatable>
   }
 </div>

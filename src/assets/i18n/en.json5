@@ -7354,11 +7354,13 @@
 
   "item.page.ancbs.catalogue.uri": "Catalogue URI",
 
-  "item.page.ancbs.digital-object.uri": "Digital Object URI",
+  "item.page.ancbs.digital-object.uri": "Digital Object URI (this page)",
 
   "item.page.ancbs.description": "Description",
 
   "item.page.ancbs.conditions-governing-access": "Conditions Governing Access",
 
   "item.page.ancbs.conditions-governing-use": "Conditions Governing Use",
+
+  "item.page.ancbs.pdfm": "Collated PDF",
 }
