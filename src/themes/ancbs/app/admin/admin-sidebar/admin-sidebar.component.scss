@@ -36,6 +36,7 @@
 
     img#admin-sidebar-logo {
       height: var(--ds-admin-sidebar-logo-height);
+      filter: saturate(0) brightness(0) invert(1);
     }
 
     ::ng-deep {

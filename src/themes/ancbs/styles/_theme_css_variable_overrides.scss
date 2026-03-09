@@ -25,5 +25,18 @@
 
   --ds-item-page-img-field-default-inline-height: 24px;
   --ds-item-page-img-field-ror-inline-height: var(--ds-item-page-img-field-default-inline-height);
+
+  --ds-admin-sidebar-bg: #{$ancbs-brown};
+  --ds-admin-sidebar-header-bg: #{$ancbs-darkbrown};
+  --ds-admin-sidebar-active-bg: #{$ancbs-darkbrown};
+
+  --ds-home-news-link-color: $ancbs-brown;
+  --ds-header-navbar-border-bottom-color: $ancbs-brown;
+
+  --ds-breadcrumb-link-color: $ancbs-brown;
+  --ds-breadcrumb-link-active-color: $ancbs-darkbrown;
+
+  --ds-navbar-link-color: $ancbs-brown;
+  --ds-header-icon-color: $ancbs-brown;
 }
 
