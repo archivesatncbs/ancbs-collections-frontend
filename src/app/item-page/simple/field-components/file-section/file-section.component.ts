@@ -52,7 +52,7 @@ export class FileSectionComponent implements OnInit {
 
   @Input() item: Item;
 
-  label = 'item.page.ancbs.pdfm';
+  label = 'item.page.ancbs.files';
 
   separator = '<br/>';
 

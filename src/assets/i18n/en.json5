@@ -32,7 +32,7 @@
 
   "error-page.description.404": "Page not found",
 
-  "error-page.orcid.generic-error": "An error occurred during login via ORCID. Make sure you have shared your ORCID account email address with Collections |  Archives at NCBS. If the error persists, contact the administrator",
+  "error-page.orcid.generic-error": "An error occurred during login via ORCID. Make sure you have shared your ORCID account email address with Archives at NCBS. If the error persists, contact the administrator",
 
   "listelement.badge.access-status": "Access status:",
 
@@ -152,7 +152,7 @@
 
   "admin.registries.metadata.breadcrumbs": "Metadata registry",
 
-  "admin.registries.metadata.description": "The metadata registry maintains a list of all metadata fields available in the repository. These fields may be divided amongst multiple schemas. However, Collections | Archives at NCBS requires the qualified Dublin Core schema.",
+  "admin.registries.metadata.description": "The metadata registry maintains a list of all metadata fields available in the repository. These fields may be divided amongst multiple schemas. However, Archives at NCBS requires the qualified Dublin Core schema.",
 
   "admin.registries.metadata.form.create": "Create metadata schema",
 
@@ -7363,4 +7363,6 @@
   "item.page.ancbs.conditions-governing-use": "Conditions Governing Use",
 
   "item.page.ancbs.pdfm": "Collated PDF",
+
+  "item.page.ancbs.files": "Files",
 }
