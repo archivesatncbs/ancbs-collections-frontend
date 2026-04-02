@@ -1,5 +1,5 @@
 <div class="row">
-  @if (showThumbnails) {
+  <!-- @if (showThumbnails) {
     <div class="col-3 col-md-2">
       @if (linkType !== linkTypes.None) {
         <a [target]="(linkType === linkTypes.ExternalLink) ? '_blank' : '_self'" [attr.rel]="(linkType === linkTypes.ExternalLink) ? 'noopener noreferrer' : null"
@@ -15,7 +15,7 @@
         </span>
       }
     </div>
-  }
+  } -->
   <div [ngClass]="showThumbnails ? 'col-9' : 'col-md-12'">
     <div class="d-flex">
       @if (showLabel) {
