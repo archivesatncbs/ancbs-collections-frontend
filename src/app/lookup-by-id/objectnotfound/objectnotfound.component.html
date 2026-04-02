@@ -1,8 +1,14 @@
 <div class="object-not-found container">
-  <h1>{{"error.identifier" | translate}}</h1>
+  <!-- <h1>{{"error.identifier" | translate}}</h1> -->
   <h2><small><em>{{missingItem}}</em></small></h2>
+  <h2>The digital object URI that you are trying to access is either invalid or has been assigned Access Level 2</h2>
+  <br>
+  <h2>Access Level 2 digital objects at Archives at NCBS can be made available to registered users.</h2>
+  <br>
+  <h2>Log in by clicking below and re-visit the archival object to view the files.</h2>
+  <h2>For more details, please visit <a href="https://archives.ncbs.res.in/access">archives.ncbs.res.in/access</a></h2>
   <br />
   <p class="text-center">
-    <a routerLink="/home" class="btn btn-primary" role="button" tabindex="0">{{"404.link.home-page" | translate}}</a>
+    <a routerLink="/login" class="btn btn-primary" role="button" tabindex="0">{{"ancbs.link.login-page" | translate}}</a>
   </p>
 </div>
